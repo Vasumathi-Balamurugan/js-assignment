@@ -1,11 +1,121 @@
-<!DOCTYPE html> 
-<html> 
-  
-<head> 
-<body> 
-  <h1>Print this page. </h1>
-  <buttom onclick="window.print()">Click Me</buttom>
-  
-</body> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use of if_else</title>
 </head>
-<html>
+<body>
+    <script>
+        
+        var arr=[1,2,3,4,5];
+            console.log(arr);
+            console.log(arr.copyWithin(4,1)); 
+            /*The copyWithin() method copies array elements to another 
+            position in the array overwriting the existing Values.*/
+
+            var t=arr.entries();
+            for (i of t){
+                console.log(i);
+            }
+        /*The entries() method returns an array Iterator 
+        object with key/value pairs.*/
+
+        console.log(arr.every(c));
+        function c(num){
+                return num>0;
+        }
+        /* The every() method check if all the  elements pass a test,
+        provided as a function. This method execures the function once for
+        each element present in the array.*/
+
+        console.log(arr.fill("0"));
+        // input array contain some elements. 
+
+        var f=[30,40,50,55,56,57,58]
+        // method (return element > 0). 
+        console.log(f.filter(d));
+         // Printing desired values.
+        function d(f){
+            return f>55;
+        }
+        /*The find() method returns the value of the first element in an array that pass a test (provided as a function).
+        The find() method executes the function once for each element present in the array:
+        If it finds an array element where the function returns a true value, find() returns the value of that array element (and does not check the remaining values)
+        Otherwise it returns undefined*/
+         // function (return element > 0).
+        console.log(f.find(fun));
+        
+    // Printing desired values.
+        function fun(f){
+            return f>50;
+        }
+        /*The findIndex() method returns the index of the first element in an array that pass a test (provided as a function).The findIndex() method executes the function once for each element present in the array:If it finds an array element where the function returns a true value, findIndex() returns the index of that array element (and does not check the remaining values)Otherwise it returns -1*/
+         // function (return element > 0).
+
+        console.log(f.findIndex(car));
+    // Printing desired values.
+
+        function car(f){
+            return f>30;
+        }
+        /*The forEach() method calls a function once for each element in an array, in order.*/
+        console.log(f.forEach(bus));
+        
+    // Printing desired values.
+        function bus(i,j){
+            console.log(j +":"+i);
+        }
+        /*The pop() method removes the last element of an array, and returns that element.*/
+        console.log(f.pop());
+        /*The push() method adds new items to the end of an array, and returns the new length.*/
+        var f1=f.push(58);
+        console.log(f1);
+        console.log(f);
+        console.log(f.slice(2,6));
+        var f2=[30,40,50,55,56,57,58]
+        f2.splice(2,0,"Prasad","Sai");
+        console.log(f2);
+        console.log(f2.reverse());
+        console.log(f2.toString());
+
+        var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        console.log(txt);
+        var sln = txt.length;
+        console.log(sln);
+        var str = "Please locate where 'locate' occurs!";
+        console.log(str);
+        var pos = str.indexOf("locate");
+        console.log(pos);
+        var pos = str.lastIndexOf("locate");
+        console.log(pos);
+        var pos = str.lastIndexOf("John");
+        console.log(pos);
+        var pos = str.indexOf("locate", 15);
+        console.log(pos);
+        var pos = str.lastIndexOf("locate", 15);
+        console.log(pos);
+        var pos = str.search("locate");
+        console.log(pos);
+        var str = "Apple, Banana, Kiwi";
+        var res = str.slice(7, 13);
+        console.log(res);
+        var str = "Apple, Banana, Kiwi";
+        var res = str.slice(-12, -6);
+        console.log(res);
+        var res = str.slice(7);
+        console.log(res);
+        var res = str.slice(-12);
+        console.log(res);
+        var res = str.substring(7, 13);
+        console.log(res);
+        var res = str.substr(7, 6);
+        console.log(res);
+        var res = str.substr(7);
+        console.log(res);
+        var res = str.substr(-4);
+        console.log(res);
+    </script>
+    
+</body>
+</html>

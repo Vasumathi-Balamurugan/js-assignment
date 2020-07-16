@@ -1,27 +1,20 @@
-
-<!DOCTYPE HTML> 
-<html> 
-  
-<head> 
-    <title>Date Formating...</title>
-</head> 
-  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use of if_else</title>
+</head>
 <body>
     <script>
-        var t=new Date();
-        var day=t.getDate();
-        var month=t.getMonth();
-        var year=t.getFullYear();
-        document.write("Format 1:"+day+"-"+month+"-"+year);
-        document.write("<br>");
-        document.write("Format 2:"+day+"/"+month+"/"+year);
-        document.write("<br>");
-        document.write("Format 3:"+month+"-"+day+"-"+year);
-        document.write("<br>");
-        document.write("Format 4:"+month+"/"+day+"/"+year);
+        let age=prompt("Hi! What's your age?",'21');
+        if(age>=21){
+            console.log("Can Drink!!!");
+        }
+        else{
+            console.log(`Your age is ${age} i.e < 21.So you Can't Drink`);
+        }
     </script>
-
     
-</body> 
-  
+</body>
 </html>
