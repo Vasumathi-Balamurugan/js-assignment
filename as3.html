@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marks and Grades...</title>
+</head>
+<body>
+    <script>
+        var mark=prompt("Enter your mark:");
+        var grade;
+        switch(true){
+        case (mark>=75 && mark<=100):
+            grade='A';
+            break;
+        
+        case (mark>=50&&mark<75):
+            grade='B';
+            break;
+        case (mark>=25&&mark<50):
+            grade='C';
+            break;
+        deafault:
+            grade='Fail';
+            break;
+        }
+        console.log(`Mark is${mark}and grade is${grade}`);
+    </script>
+</body>
+</html>
